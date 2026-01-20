@@ -5,6 +5,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+- Extend `Dockerfile` to build the application with Maven and then copy the created JAR file to the image.
+- Modify `compose.yaml` to work with Google Cloud Build and Could Run.
+- Extend `mise.toml` to include dependencies for Google Cloud.
+- Update `README.md` to explain deployment to Google Cloud Run.
+
 ## [0.0.5] - 2025-12-09
 
 - Add review controller, services, related classes, and tests (exercise 7.1).

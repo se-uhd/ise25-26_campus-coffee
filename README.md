@@ -265,9 +265,16 @@ We use the `gcloud` CLI (see [`mise.toml`](mise.toml)) to build CampusCoffee in 
 and deploy it to Cloud Run.
 Deployment using `compose.yaml` is [still in preview](https://docs.cloud.google.com/run/docs/deploy-run-compose), so you need to install the `beta` and `run-compos` components first.
 
+Install required components for the `gcloud` CLI:
+
 ```shell
 gcloud components install beta
 gcloud components install run-compos
+```
+
+Log in and deploy the application using the `compose.yaml` file:
+
+```shell
 gcloud auth login
 gcloud beta run compose up compose.yaml
 ```
